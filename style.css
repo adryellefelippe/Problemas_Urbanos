@@ -4,3 +4,61 @@
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
 }
+
+header {
+    background-color: rgba(255, 152, 0, 0.8);
+    color: #fff;
+    font-size: 14px;
+    padding: 1.5% 1.5% 0.5% 1.5%;
+}
+
+#menu {
+    font-weight: 600;
+    display: flex;
+}
+
+#menu>p {
+    margin: 0.3%;
+    padding: 0.4% 0.4% 0 0.4%;
+}
+
+.titulo {
+    color: #635D5C;
+    font-size: 12px;
+    padding: 0.5%;
+    margin: 1% 1% 1% 6%;
+}
+
+.form {
+    background-color: rgba(140, 198, 63, 0.8);
+    color: #fff;
+    padding: 2%;
+    margin: 1% 6% 1% 6%;
+    border-radius: 20px;
+}
+
+h2 {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+form > p, input, select, textarea {
+    margin-left: 2%;
+    padding: 0.5%;
+}
+
+form > input, select, textarea {
+    border-radius: 10px;
+    border-color: #D9D9D9;
+    background-color: #D9D9D9;
+    color: #fff;
+}
+
+#botao {
+    border-radius: 10px;
+    border-color: #fff;
+    background-color: #8CC63F;
+    color: #fff;
+    padding: 0.5%;
+    font-weight: 500;
+}

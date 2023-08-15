@@ -22,29 +22,44 @@
         <div class="titulo">
             <h1>Registro de Problemas Urbanos</h1>
         </div>
-        <div id="formulario">
+        <div class="form">
             <form>
-                <h2>Problema</h2>
-                <p>Classificação do Problema</p>
-                <select id="menu_opc">
-                    <option class="opc" value="Falta de Energia">Falta de Energia</option>
-                    <option class="opc" value="Instabilidade de Energia">Instabilidade de Energia</option>
-                    <option class="opc" value="Falta de Água">Falta de Água</option>
-                    <option class="opc" value="Rua Esburacada">Rua Esburacada</option>
-                    <option class="opc" value="Falta de Acessibilidade">Falta de Acessibilidade</option>
-                </select>
-                <p>Descrição do Problema</p>
-                <textarea>Detalhe o problema.</textarea>
-                <h2>Endereço</h2>
-                <p>CEP</p>
-                <input type="number">
-                <p>Bairro</p>
-                <input type="text">
-                <p>Rua</p>
-                <input type="text">
-                <p>Número</p>
-                <input type="number">
-                <input id="botao" type="button" value="Enviar">
+                <div class="formulario">
+                    <h2>Problema</h2>
+                    <div id="problema">
+                        <p>Classificação do Problema</p>
+                        <select id="menu_opc">
+                            <option class="opc" value="Falta de Energia">Falta de Energia</option>
+                            <option class="opc" value="Instabilidade de Energia">Instabilidade de Energia</option>
+                            <option class="opc" value="Falta de Água">Falta de Água</option>
+                            <option class="opc" value="Rua Esburacada">Rua Esburacada</option>
+                            <option class="opc" value="Falta de Acessibilidade">Falta de Acessibilidade</option>
+                        </select>
+                    </div>
+                    <div id="descricao">
+                        <p>Descrição do Problema</p>
+                        <textarea>Detalhe o problema.</textarea>
+                    </div>
+                </div>
+                <div class="formulario">
+                    <h2>Endereço</h2>
+                    <div class="end">
+                        <p>CEP</p>
+                        <input type="number">
+                        <p>Bairro</p>
+                        <input type="text">
+                    </div>
+                    <div class="end">
+                        <p>Rua</p>
+                        <input type="text">
+                        <p>Número</p>
+                        <input type="number">
+                    </div>
+                    <div id="form_botoao">
+                        <input id="botao" type="submit" value="Enviar">
+                    </div>
+
+                </div>
             </form>
         </div>
     </main>

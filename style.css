@@ -5,19 +5,28 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-header {
+:root {
+    --color-shadow: rgba(99, 93, 92, 0.2);
+    --color-background: rgba(99, 93, 92, 0.6);
+}
+
+header, footer {
     background-color: rgba(255, 152, 0, 0.8);
     color: #fff;
     font-size: 14px;
     padding: 1.5% 1.5% 0.5% 1.5%;
 }
 
+header {
+    height: 70px;
+}
+
 #menu {
-    font-weight: 600;
     display: flex;
 }
 
 #menu>p {
+    font-weight: 600;
     margin: 0.3%;
     padding: 0.4% 0.4% 0 0.4%;
 }
@@ -29,10 +38,14 @@ header {
     margin: 1% 1% 1% 6%;
 }
 
-#problema, #descricao {
+#problema, #descricao, #end1, #end2 {
     display: flex;
     flex-direction: row;
     margin: 2%;
+}
+
+#formulario2 {
+    margin: 4%;
 }
 
 .form {
@@ -51,14 +64,22 @@ h2 {
 p, input, select, textarea {
     margin-left: 2%;
     padding: 0.5%;
-    font-weight: 400;
+    font-weight: 500;
+}
+
+#bairro {
+    width: 300px;
+}
+
+#rua {
+    width: 400px;
 }
 
 input, select, textarea {
     border-radius: 10px;
     border: none;
-    background-color: #D9D9D9;
-    color: #fff;
+    background-color: var(--color-background);
+    color:#fff;
 }
 
 #textarea {
@@ -76,31 +97,44 @@ input:focus, select:focus, textarea:focus {
 
 #form_botoao {
     font-weight: 500;
-    margin: 2%;
+    margin: 4%;
     text-align: center;
 }
 
 #botao {
+    padding: 0.5%;
+    width: 15%;
+    height: 5%;
+    background-color: #8CC63F;
     color: #fff;
     border-radius: 10px;
-    border-color: #fff;
+    border-color: var(--color-background);
     border-style: solid;
     border-width: 1px;
-    background-color: #8CC63F;
-    padding: 0.5%;
-    width: 10%;
-    height: 5%;
     cursor: pointer;
+    box-shadow: 2px 5px 2px var(--color-shadow);
+    font-weight: 600;
 }
 
 #botao:hover {
-    background-color: #fff;
+    background-color: var(--color-background);
     border-color: #8CC63F;
-    color:#8CC63F;
 }
 
 #botao:focus {
     background-color: #8CC63F;
     border-color: #fff;
     color:#fff;
+}
+
+#titulo_footer {
+    font-weight: 600;
+    margin: 0.5% 1% 0 1%;
+}
+
+#contatos {
+    display: flex;
+    flex-direction: row;
+    padding: 0 0.3% 0 0.3%;
+    margin: 0 0 0.5% 2%;
 }

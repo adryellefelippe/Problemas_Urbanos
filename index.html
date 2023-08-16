@@ -13,9 +13,9 @@
 <body>
     <header>
         <div id="menu">
-            <p>Registro de Probelmas Urbanos</p>
-            <p>Acompanhamento de Probelmas Urbanos</p>
-            <p>Visão para Órgãos da Cidade</p>
+            <a href="index.html">Registro de Probelmas Urbanos</a>
+            <a href="dashboards.html">Acompanhamento de Probelmas Urbanos</a>
+            <!-- <p>Visão para Órgãos da Cidade</p> -->
         </div>
     </header>
     <main>
@@ -28,7 +28,7 @@
                     <h2>Problema</h2>
                     <div id="problema">
                         <p>Classificação do Problema</p>
-                        <select id="menu_opc">
+                        <select id="menu_opc" name="Problema">
                             <option class="opc" value="Falta de Energia">Falta de Energia</option>
                             <option class="opc" value="Instabilidade de Energia">Instabilidade de Energia</option>
                             <option class="opc" value="Falta de Água">Falta de Água</option>
@@ -38,23 +38,24 @@
                     </div>
                     <div id="descricao">
                         <p>Descrição do Problema</p>
-                        <textarea id="textarea"></textarea>
+                        <textarea id="textarea" name="Descricao"></textarea>
                     </div>
                 </div>
                 <div id="formulario2">
                     <h2>Endereço</h2>
                     <div id="end1">
                         <p>CEP</p>
-                        <input type="number">
+                        <input type="number" name="CEP">
                         <p>Bairro</p>
-                        <input id="bairro" type="text">
+                        <input id="bairro" type="text" name="Bairro">
                     </div>
                     <div id="end2">
                         <p>Rua</p>
-                        <input id="rua" type="text">
+                        <input id="rua" type="text" name="Rua">
                         <p>Número</p>
                         <input type="number">
                     </div>
+                    <input type="hidden" name="Data_Abertura" value="x-sheetmonkey-current-date-time" />
                     <div id="form_botoao">
                         <!-- <input id="botao" type="submit" value="Enviar"> -->
                         <button id="botao" type="submit">Enviar</button>
@@ -71,5 +72,7 @@
             <p>Água (SAAE): 0800 725 0330</p>
         </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

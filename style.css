@@ -25,10 +25,15 @@ header {
     display: flex;
 }
 
-#menu>p {
+#menu>a {
     font-weight: 600;
     margin: 0.3%;
     padding: 0.4% 0.4% 0 0.4%;
+    text-decoration: none;
+}
+
+#menu>a:visited {
+    color: #fff;
 }
 
 .titulo {

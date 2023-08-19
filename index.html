@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="pt-bt">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registrar Problema Urbano</title>
-
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;600;700&display=swap" rel="stylesheet">
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Registrar Problema Urbano</title>
+        
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;600;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
     <header>
         <div id="menu">
             <a href="index.html">Registro de Probelmas Urbanos</a>
@@ -28,7 +28,7 @@
                     <h2>Problema</h2>
                     <div id="problema">
                         <p>Classificação do Problema</p>
-                        <select id="menu_opc" name="Problema">
+                        <select id="menu_opc" name="problema">
                             <option class="opc" value="Falta de Energia">Falta de Energia</option>
                             <option class="opc" value="Instabilidade de Energia">Instabilidade de Energia</option>
                             <option class="opc" value="Falta de Água">Falta de Água</option>
@@ -38,26 +38,25 @@
                     </div>
                     <div id="descricao">
                         <p>Descrição do Problema</p>
-                        <textarea id="textarea" name="Descricao"></textarea>
+                        <textarea id="textarea" name="descricao"></textarea>
                     </div>
                 </div>
                 <div id="formulario2">
                     <h2>Endereço</h2>
                     <div id="end1">
                         <p>CEP</p>
-                        <input type="number" name="CEP">
+                        <input type="number" name="cep">
                         <p>Bairro</p>
-                        <input id="bairro" type="text" name="Bairro">
+                        <input id="bairro" type="text" name="bairro">
                     </div>
                     <div id="end2">
                         <p>Rua</p>
-                        <input id="rua" type="text" name="Rua">
+                        <input id="rua" type="text" name="rua">
                         <p>Número</p>
                         <input type="number">
                     </div>
-                    <input type="hidden" name="Data_Abertura" value="x-sheetmonkey-current-date-time" />
+                    <input type="hidden" name="data_abertura" value="x-sheetmonkey-current-date-time" />
                     <div id="form_botoao">
-                        <!-- <input id="botao" type="submit" value="Enviar"> -->
                         <button id="botao" type="submit">Enviar</button>
                     </div>
                 </div>
@@ -72,7 +71,7 @@
             <p>Água (SAAE): 0800 725 0330</p>
         </div>
     </footer>
-
+    
     <script src="script.js"></script>
 </body>
 </html>

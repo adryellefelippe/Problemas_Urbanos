@@ -116,7 +116,7 @@ input:focus, select:focus, textarea:focus {
 #botao {
     padding: 0.5%;
     width: 15%;
-    height: 5%;
+    height: 32px;
     background-color: #8CC63F;
     color: #fff;
     border-radius: 10px;
@@ -130,13 +130,27 @@ input:focus, select:focus, textarea:focus {
 
 #botao:hover {
     background-color: var(--color-background);
-    border-color: #8CC63F;
+    border-color: #fff;
 }
 
 #botao:focus {
     background-color: #8CC63F;
-    border-color: #fff;
+    border-color: var(--color-background);
     color:#fff;
+}
+
+.loading {
+    width: 24px;
+    animation: animacaoLoading 2s infinite linear;
+}
+
+@keyframes animacaoLoading {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 #titulo_footer {

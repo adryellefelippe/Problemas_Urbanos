@@ -28,7 +28,7 @@
                     <h2>Problema</h2>
                     <div id="problema">
                         <p>Classificação do Problema</p>
-                        <select id="menu_opc" name="problema">
+                        <select id="menu_opc" name="problema" required="required">
                             <option class="opc" value="Falta de Energia">Falta de Energia</option>
                             <option class="opc" value="Instabilidade de Energia">Instabilidade de Energia</option>
                             <option class="opc" value="Falta de Água">Falta de Água</option>
@@ -38,26 +38,25 @@
                     </div>
                     <div id="descricao">
                         <p>Descrição do Problema</p>
-                        <textarea id="textarea" name="descricao"></textarea>
+                        <textarea id="textarea" name="descricao" required="required"></textarea>
                     </div>
                 </div>
                 <div id="formulario2">
                     <h2>Endereço</h2>
                     <div id="end1">
                         <p>CEP</p>
-                        <input type="number" name="cep">
+                        <input type="number" name="cep" required="required"/>
                         <p>Bairro</p>
-                        <input id="bairro" type="text" name="bairro">
+                        <input id="bairro" type="text" name="bairro" required="required"/>
                     </div>
                     <div id="end2">
                         <p>Rua</p>
-                        <input id="rua" type="text" name="rua">
+                        <input id="rua" type="text" name="rua" required="required"/>
                         <p>Número</p>
                         <input type="number">
                     </div>
-                    <input type="hidden" name="data_abertura" value="x-sheetmonkey-current-date-time" />
                     <div id="form_botoao">
-                        <button id="botao" type="submit" disabled="disabled">Enviar</button>
+                        <button id="botao" type="submit">Enviar</button>
                     </div>
                 </div>
             </form>

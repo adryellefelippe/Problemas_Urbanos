@@ -47,10 +47,12 @@ button.addEventListener('click', (event)=> {
             document.querySelector('input[name=cep').value = '';
             document.querySelector('input[name=bairro]').value = '';
             document.querySelector('input[name=rua]').value = '';
+
+            alert('Registro enviado!');
         });
     } else {
         removeLoading();
-        alert('Campos vazios, favor preenche-los.')
+        alert('Campos vazios, favor preenche-los.');
     }
 
 });

@@ -8,17 +8,12 @@ function addLoading() {
     button.innerHTML = '<img src="images/load.png" alt="Loading" class="loading">';
 };
 
-function remoceLoading (){
+function removeLoading (){
     button.innerHTML = 'Enviar';
 };
 
-for (field of fields){
-    field.addEventListener('invalid', event => {
-        console.log('campo inválido');
-    })
-}
 
-document.querySelector('#botao').addEventListener('click', (event)=> {
+button.addEventListener('click', (event)=> {
     event.preventDefault();
     addLoading();
 
@@ -37,7 +32,7 @@ document.querySelector('#botao').addEventListener('click', (event)=> {
         var bairro = document.querySelector('input[name=bairro]').value;
         var rua = document.querySelector('input[name=rua]').value;
         var data_abertura = new Date().toLocaleDateString();
-        
+
         fetch('https://api.sheetmonkey.io/form/ayv7gRJe8g28LVuZGUumLx', {
             method: 'POST',
             headers: {
@@ -45,7 +40,7 @@ document.querySelector('#botao').addEventListener('click', (event)=> {
             },
             body: JSON.stringify({problema, descricao, cep, bairro, rua, data_abertura}),
         }).then(() => {
-            remoceLoading();
+            removeLoading();
     
             document.querySelector('select[name=problema]').value = '';
             document.querySelector('textarea[name=descricao]').value = '';
@@ -54,8 +49,8 @@ document.querySelector('#botao').addEventListener('click', (event)=> {
             document.querySelector('input[name=rua]').value = '';
         });
     } else {
-        remoceLoading();
-        alert('campos vazios');
+        removeLoading();
+        alert('Campos vazios, favor preenche-los.')
     }
 
 });

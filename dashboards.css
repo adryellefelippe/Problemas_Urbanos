@@ -36,6 +36,14 @@ header {
     color: #fff;
 }
 
+#corpo {
+    display: flex;
+    background-color: #635D5C;
+    padding: 2%;
+    margin: 1% 6% 1% 6%;
+    border-radius: 20px;
+}
+
 #titulo_footer {
     font-weight: 600;
     margin: 0.5% 1% 0 1%;

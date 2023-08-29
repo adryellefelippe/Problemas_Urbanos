@@ -36,14 +36,6 @@ header {
     color: #fff;
 }
 
-.titulo {
-    color: #8CC63F;
-    font-size: 22px;
-    padding: 0.5%;
-    margin: 4% 1% 2% 0;
-    text-align: center;
-}
-
 main {
     background-color: #635D5C;
     padding: 2%;
@@ -53,6 +45,19 @@ main {
 
 #corpo_cima {
     display: flex;
+}
+
+#tabelas_totais {
+    margin: 2%;
+    margin-right: 4%;
+}
+
+.titulo {
+    color: #8CC63F;
+    font-size: 22px;
+    padding: 0.5%;
+    margin: 4% 1% 2% 0;
+    text-align: center;
 }
 
 #corpo_baixo {

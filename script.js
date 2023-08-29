@@ -1,5 +1,6 @@
 var button = document.querySelector('#botao');
 var fields = document.querySelectorAll('[required]');
+var campoCep = document.querySelector('input[name=cep]');
 var vazio;
 
 console.log(fields);
@@ -8,10 +9,37 @@ function addLoading() {
     button.innerHTML = '<img src="images/load.png" alt="Loading" class="loading">';
 };
 
-function removeLoading (){
+function removeLoading() {
     button.innerHTML = 'Enviar';
 };
 
+function buscaCep() {
+    var cep = document.getElementById('cep').value;
+
+    if(cep !== "" || cep !== null){
+        var url = "https://brasilapi.com.br/api/cep/v1/" + cep;
+        var requisicao = new XMLHttpRequest();
+        
+        requisicao.open("GET", url);
+        requisicao.send();
+
+        requisicao.onload = function() {
+            if(requisicao.status === 200){
+                var endereco = JSON.parse(requisicao.response);
+
+                document.querySelector('input[name=bairro]').value = endereco.neighborhood;
+                document.querySelector('input[name=rua]').value = endereco.street;
+            }
+            else if (requisicao.status === 404){
+                alert("CEP inválido.");
+            }
+        }
+    }
+};
+
+ window.onload = function() {
+    campoCep.addEventListener('blur', buscaCep);
+ };
 
 button.addEventListener('click', (event)=> {
     event.preventDefault();
@@ -28,12 +56,12 @@ button.addEventListener('click', (event)=> {
     if(vazio === false){
         var problema = document.querySelector('select[name=problema]').value;
         var descricao = document.querySelector('textarea[name=descricao]').value;
-        var cep = document.querySelector('input[name=cep').value;
+        var cep = document.querySelector('input[name=cep]').value;
         var bairro = document.querySelector('input[name=bairro]').value;
         var rua = document.querySelector('input[name=rua]').value;
         var data_abertura = new Date().toLocaleDateString();
 
-        fetch('https://api.sheetmonkey.io/form/ayv7gRJe8g28LVuZGUumLx', {
+        fetch('https://api.sheetmonkey.io/form/hp6LfqFLNvYYyzp5Jh17CS', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

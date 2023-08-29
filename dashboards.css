@@ -36,12 +36,30 @@ header {
     color: #fff;
 }
 
-#corpo {
-    display: flex;
+.titulo {
+    color: #8CC63F;
+    font-size: 22px;
+    padding: 0.5%;
+    margin: 4% 1% 2% 0;
+    text-align: center;
+}
+
+main {
     background-color: #635D5C;
     padding: 2%;
     margin: 1% 6% 1% 6%;
     border-radius: 20px;
+}
+
+#corpo_cima {
+    display: flex;
+}
+
+#corpo_baixo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 #titulo_footer {

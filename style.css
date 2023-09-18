@@ -1,0 +1,172 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+:root {
+    --color-shadow: rgba(99, 93, 92, 0.2);
+    --color-background: rgba(99, 93, 92, 0.6);
+}
+
+header, footer {
+    background-color: rgba(255, 152, 0, 0.8);
+    color: #fff;
+    font-size: 14px;
+    padding: 1.5% 1.5% 0.5% 1.5%;
+}
+
+header {
+    height: 70px;
+}
+
+#menu {
+    display: flex;
+}
+
+#menu>a {
+    font-weight: 600;
+    margin: 0.3%;
+    padding: 0.4% 0.4% 0 0.4%;
+    text-decoration: none;
+}
+
+#menu>a:visited {
+    color: #fff;
+}
+
+.titulo {
+    color: #635D5C;
+    font-size: 12px;
+    padding: 0.5%;
+    margin: 1% 1% 1% 6%;
+}
+
+#problema, #descricao, #end1, #end2 {
+    display: flex;
+    flex-direction: row;
+    margin: 2%;
+}
+
+#formulario2 {
+    margin: 4%;
+}
+
+.form {
+    background-color: rgba(140, 198, 63, 0.8);
+    color: #fff;
+    padding: 2%;
+    margin: 1% 6% 1% 6%;
+    border-radius: 20px;
+}
+
+h2 {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+p, input, select, textarea {
+    margin-left: 2%;
+    padding: 0.5%;
+    font-weight: 500;
+}
+
+#bairro {
+    width: 300px;
+}
+
+#rua {
+    width: 400px;
+}
+
+input, select, textarea {
+    border-radius: 10px;
+    border: none;
+    background-color: var(--color-background);
+    color:#fff;
+}
+
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+    -webkit-text-fill-color: #fff;
+    transition: background-color 5000s;
+}
+
+#textarea {
+    margin-left: 4.2%;
+    height: 200px;
+    width: 600px;
+}
+
+input:focus, select:focus, textarea:focus {
+    border-style: solid;
+    border-width: 1px;
+    border-color: #FF9800;
+    outline: none;
+}
+
+#form_botoao {
+    font-weight: 500;
+    margin: 4%;
+    text-align: center;
+}
+
+#botao {
+    padding: 0.5%;
+    width: 15%;
+    height: 32px;
+    background-color: #8CC63F;
+    color: #fff;
+    border-radius: 10px;
+    border-color: var(--color-background);
+    border-style: solid;
+    border-width: 1px;
+    cursor: pointer;
+    box-shadow: 2px 5px 2px var(--color-shadow);
+    font-weight: 600;
+}
+
+#botao:hover {
+    background-color: var(--color-background);
+    border-color: #fff;
+}
+
+#botao:focus {
+    background-color: #8CC63F;
+    border-color: var(--color-background);
+    color:#fff;
+}
+
+.loading {
+    width: 24px;
+    animation: animacaoLoading 2s infinite linear;
+}
+
+@keyframes animacaoLoading {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+#titulo_footer {
+    font-weight: 600;
+    margin: 0.5% 1% 0 1%;
+}
+
+#contatos {
+    display: flex;
+    flex-direction: row;
+    padding: 0 0.3% 0 0.3%;
+    margin: 0 0 0.5% 2%;
+}
+
+/* @media screen and (max-width:1000px) {
+    .form{
+        background-color: #FF9800;
+    }
+} */

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Registrar Problema Urbano</title>
+        
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;600;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+    <header>
+        <div id="menu">
+            <a href="index.html">Registro de Probelmas Urbanos</a>
+            <a href="dashboards.html">Acompanhamento de Probelmas Urbanos</a>
+            <!-- <p>Visão para Órgãos da Cidade</p> -->
+        </div>
+    </header>
+    <main>
+        <div class="titulo">
+            <h1>Registro de Problemas Urbanos</h1>
+        </div>
+        <div class="form">
+            <form>
+                <div id="formulario1">
+                    <h2>Problema</h2>
+                    <div id="problema">
+                        <p>Classificação do Problema</p>
+                        <select id="menu_opc" name="problema" required>
+                            <option class="opc" value="Falta de Energia">Falta de Energia</option>
+                            <option class="opc" value="Instabilidade de Energia">Instabilidade de Energia</option>
+                            <option class="opc" value="Falta de Água">Falta de Água</option>
+                            <option class="opc" value="Rua Esburacada">Rua Esburacada</option>
+                            <option class="opc" value="Falta de Acessibilidade">Falta de Acessibilidade</option>
+                            <option class="opc" value="Árvore caída">Árvore caída</option>
+                        </select>
+                    </div>
+                    <div id="descricao">
+                        <p>Descrição do Problema</p>
+                        <textarea id="textarea" name="descricao" required></textarea>
+                    </div>
+                </div>
+                <div id="formulario2">
+                    <h2>Endereço</h2>
+                    <div id="end1">
+                        <p>CEP</p>
+                        <input id="cep" type="text" name="cep" data-ls-module="charCounter" maxlength="8" required/>
+                        <p>Bairro</p>
+                        <input id="bairro" type="text" name="bairro" required/>
+                    </div>
+                    <div id="end2">
+                        <p>Rua</p>
+                        <input id="rua" type="text" name="rua" required/>
+                        <p>Número</p>
+                        <input type="number">
+                    </div>
+                    <div id="form_botoao">
+                        <button id="botao">Enviar</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p id="titulo_footer">Telefones para Contato</p>
+        <div id="contatos">
+            <p>Prefeitura: (12) 3955-9000</p>
+            <p>Energia (EDP - SP): 0800 721 0123</p>
+            <p>Água (SAAE): 0800 725 0330</p>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>

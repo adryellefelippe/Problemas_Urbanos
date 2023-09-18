@@ -60,6 +60,7 @@ button.addEventListener('click', (event)=> {
         var bairro = document.querySelector('input[name=bairro]').value;
         var rua = document.querySelector('input[name=rua]').value;
         var data_abertura = new Date().toLocaleDateString();
+        // var em_andamento = "Não";
 
         fetch('https://api.sheetmonkey.io/form/hp6LfqFLNvYYyzp5Jh17CS', {
             method: 'POST',
